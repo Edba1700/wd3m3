@@ -36,7 +36,7 @@ gulp.task("scss", function(){
     .pipe(sass().on('error', sass.logError))
     .pipe(scmap.write())
     .pipe(concat("styles.min.css"))
-    //.pipe(minicss())
+    .pipe(minicss())
     .pipe(gulp.dest('fin/css/'))
     return console.log("SCSS processed!");
 });

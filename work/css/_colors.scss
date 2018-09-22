@@ -1,0 +1,49 @@
+$textcol: black;
+$sectcol: lightblue;
+$linkcol: rgba(0, 26, 255, 0.836);
+$hedrcol: darkgreen;
+
+@mixin colormix1{
+    background-color: rgb(22, 22, 22);
+    color: rgb(250, 108, 132);
+    border-color: white;
+}
+
+@mixin colormix2{
+    background-color: rgb(252, 218, 157);
+    color: black;
+    border-color: black;
+}
+
+body{
+    color: $textcol;
+}
+
+#envelop{
+    background-color: $sectcol;
+}
+
+a:link{
+    color: $linkcol;
+}
+
+a:hover{
+    color: lighten($linkcol, 20);
+}
+
+a:visited{
+    color: darken($linkcol, 20);
+}
+
+#mainheader{
+    li{
+        color: $hedrcol;
+        a:hover{
+            color: lighten($hedrcol,20);
+        }
+        a, a:visited{
+            color: darken($hedrcol,10);
+        }
+        
+    }
+}

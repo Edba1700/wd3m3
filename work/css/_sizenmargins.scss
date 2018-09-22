@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+#mainheader{
+    margin-bottom: 50px;
+    @if $mobile == false{
+        li{
+            margin-right:30px;
+        }
+    }
+}
+#envelop{
+    margin: auto;
+    padding: 5px;
+    @if $mobile == true{
+        width: 100%;
+    }
+    @else{
+        width: 965px;
+    }
+}
+
+.content{
+    width: 95%;
+    margin-bottom: 15px;
+    margin-left:20px;
+    padding: 2px;
+}
+
+#logo{
+    @if $mobile == true{
+        width:30%;
+    }    
+    @else{
+        width: 15%;
+    }
+    height: auto;
+    clear: both;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+#logoimg{
+    width: 100%;
+    height: auto;
+}

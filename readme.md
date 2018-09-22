@@ -7,3 +7,5 @@ _fonts.scss är för text/typsnitt.
 _sizenmargins.scss är för storlekar på element samt marginaler, padding och dyl.
 
 main.scss är för huvudsakliga ändringar, övrigt och är den fil som importerar alla andra filer.
+
+@extend finns på footern i main.
